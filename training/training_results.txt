@@ -1,0 +1,89 @@
+Training results - 2025-04-22 12:47:43
+Board size: 5x5
+Games per opponent per role: 100
+
+Opponent: Minimax
+Games: 200, Time: 34.2s
+Win rate as P1: 14.0% (14/100)
+Win rate as P2: 43.0% (43/100)
+Overall win rate: 28.5%
+Draws: 0 (0.0%)
+
+Opponent: BoardReading
+Games: 200, Time: 52.5s
+Win rate as P1: 9.0% (9/100)
+Win rate as P2: 1.0% (1/100)
+Overall win rate: 5.0%
+Draws: 0 (0.0%)
+
+Opponent: StrategicSacrifice
+Games: 200, Time: 337.1s
+Win rate as P1: 12.0% (12/100)
+Win rate as P2: 2.0% (2/100)
+Overall win rate: 7.0%
+Draws: 0 (0.0%)
+
+Opponent: EdgeControl
+Games: 200, Time: 28.7s
+Win rate as P1: 15.0% (15/100)
+Win rate as P2: 0.0% (0/100)
+Overall win rate: 7.5%
+Draws: 0 (0.0%)
+
+Opponent: Bridge
+Games: 200, Time: 25.1s
+Win rate as P1: 31.0% (31/100)
+Win rate as P2: 21.0% (21/100)
+Overall win rate: 26.0%
+Draws: 0 (0.0%)
+
+Opponent: TemplatePattern
+Games: 200, Time: 28.2s
+Win rate as P1: 41.0% (41/100)
+Win rate as P2: 34.0% (34/100)
+Overall win rate: 37.5%
+Draws: 0 (0.0%)
+
+Opponent: ThreatCreation
+Games: 200, Time: 26.7s
+Win rate as P1: 48.0% (48/100)
+Win rate as P2: 44.0% (44/100)
+Overall win rate: 46.0%
+Draws: 0 (0.0%)
+
+Opponent: VirtualConnection
+Games: 200, Time: 25.9s
+Win rate as P1: 26.0% (26/100)
+Win rate as P2: 24.0% (24/100)
+Overall win rate: 25.0%
+Draws: 0 (0.0%)
+
+Opponent: DefensivePositioning
+Games: 200, Time: 24.4s
+Win rate as P1: 53.0% (53/100)
+Win rate as P2: 40.0% (40/100)
+Overall win rate: 46.5%
+Draws: 0 (0.0%)
+
+Opponent: OpeningStrategy
+Games: 200, Time: 24.5s
+Win rate as P1: 34.0% (34/100)
+Win rate as P2: 61.0% (61/100)
+Overall win rate: 47.5%
+Draws: 0 (0.0%)
+
+Opponent: CenterDominance
+Games: 200, Time: 4170.5s
+Win rate as P1: 36.0% (36/100)
+Win rate as P2: 28.0% (28/100)
+Overall win rate: 32.0%
+Draws: 0 (0.0%)
+
+==================================================
+OVERALL TRAINING SUMMARY
+==================================================
+Total games: 2200
+Overall win rate: 28.0%
+Win rate as P1: 29.0%
+Win rate as P2: 27.1%
+Draws: 0 (0.0%)
