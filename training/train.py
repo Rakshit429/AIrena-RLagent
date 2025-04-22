@@ -3,20 +3,21 @@ import numpy as np
 import random
 import time
 import os
-from agent1 import CustomPlayer
-from agent2 import MinimaxPlayer
-from board_reading_agent import BoardReadingAgent
-from strategic_sacrifice import StrategicSacrificeAgent
-from edge_control_agent import EdgeControlAgent
-from BridgeAgent import BridgeAgent
-from TemplatePattern import TemplatePatternAgent
-from ThreatCreation import ThreatCreationAgent
-from virtual_connect import VirtualConnectionAgent
-from DefensivePosition import DefensivePositioningAgent
-from opening_stratergy import OpeningStrategyAgent
-from CenterDominance import CenterDominanceAgent
-from controller import Controller
-from grid import Grid
+from agents.agent1 import CustomPlayer
+from agents.agent2 import MinimaxPlayer
+from agents.board_reading_agent import BoardReadingAgent
+from agents.strategic_sacrifice import StrategicSacrificeAgent
+from agents.edge_control_agent import EdgeControlAgent
+from agents.BridgeAgent import BridgeAgent
+from agents.TemplatePattern import TemplatePatternAgent
+from agents.ThreatCreation import ThreatCreationAgent
+from agents.virtual_connect import VirtualConnectionAgent
+from agents.DefensivePosition import DefensivePositioningAgent
+from agents.opening_stratergy import OpeningStrategyAgent
+from agents.CenterDominance import CenterDominanceAgent
+from core.controller import Controller
+from core.grid import Grid
+
 
 def train_against_specific_opponents(board_size=5, 
                                     games_per_opponent=5000, 
@@ -145,7 +146,7 @@ def train_against_specific_opponents(board_size=5,
                 
                 # Save checkpoint and report progress
                 if game % save_interval == 0:
-                    checkpoint_path = f"models/hex_rl_vs_{opponent_name}_p1_{game}"
+                    checkpoint_path = f"training/saved_models/hex_rl_vs_{opponent_name}_p1_{game}"
                     rl_agent.save_q_table(checkpoint_path)
                     
                     elapsed = time.time() - start_time
@@ -207,7 +208,7 @@ def train_against_specific_opponents(board_size=5,
                 
                 # Save checkpoint and report progress
                 if game % save_interval == 0:
-                    checkpoint_path = f"/content/drive/MyDrive/AI-rena/hex_rl_vs_{opponent_name}_p2_{game}"
+                    checkpoint_path = f"training/saved_models/hex_rl_vs_{opponent_name}_p2_{game}"
                     rl_agent.save_q_table(checkpoint_path)
                     
                     elapsed = time.time() - start_time
@@ -227,7 +228,7 @@ def train_against_specific_opponents(board_size=5,
             overall_win_rate = (wins_as_p1 + wins_as_p2) / total_games_this_opponent * 100
             
             # Save final model for this opponent
-            final_path = f"/content/drive/MyDrive/AI-rena//hex_rl_vs_{opponent_name}_final"
+            final_path = f"training/saved_models/hex_rl_vs_{opponent_name}_final"
             rl_agent.save_q_table(final_path)
             
             # Update overall stats
@@ -266,7 +267,7 @@ def train_against_specific_opponents(board_size=5,
         results.write(f"Draws: {total_draws} ({total_draws/total_games*100:.1f}%)\n")
         
     # Save final model after all training
-    final_path = f"/content/drive/MyDrive/AI-rena//hex_rl_agent_{board_size}x{board_size}_all_opponents_final"
+    final_path = f"training/saved_models/hex_rl_agent_{board_size}x{board_size}_all_opponents_final"
     rl_agent.save_q_table(final_path)
     print(f"Training complete! Final model saved to {final_path}")
     

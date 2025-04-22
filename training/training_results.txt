@@ -1,89 +1,81 @@
-Training results - 2025-04-22 12:47:43
-Board size: 5x5
-Games per opponent per role: 100
+============================================================
+EVALUATION RESULTS
+============================================================
 
-Opponent: Minimax
-Games: 200, Time: 34.2s
-Win rate as P1: 14.0% (14/100)
-Win rate as P2: 43.0% (43/100)
-Overall win rate: 28.5%
-Draws: 0 (0.0%)
+Agent Statistics:
+  Games played: 54
+  Total wins: 49/54 (90.7%)
+  As Player 1: 22/23 wins (95.7%)
+  As Player 2: 27/31 wins (87.1%)
 
-Opponent: BoardReading
-Games: 200, Time: 52.5s
-Win rate as P1: 9.0% (9/100)
-Win rate as P2: 1.0% (1/100)
-Overall win rate: 5.0%
-Draws: 0 (0.0%)
+Minimax Statistics:
+  Games played: 36
+  Total wins: 19/36 (52.8%)
+  As Player 1: 9/21 wins (42.9%)
+  As Player 2: 10/15 wins (66.7%)
 
-Opponent: StrategicSacrifice
-Games: 200, Time: 337.1s
-Win rate as P1: 12.0% (12/100)
-Win rate as P2: 2.0% (2/100)
-Overall win rate: 7.0%
-Draws: 0 (0.0%)
+Board_reader Statistics:
+  Games played: 42
+  Total wins: 25/42 (59.5%)
+  As Player 1: 13/16 wins (81.2%)
+  As Player 2: 12/26 wins (46.2%)
 
-Opponent: EdgeControl
-Games: 200, Time: 28.7s
-Win rate as P1: 15.0% (15/100)
-Win rate as P2: 0.0% (0/100)
-Overall win rate: 7.5%
-Draws: 0 (0.0%)
+Strategicsacrifice Statistics:
+  Games played: 36
+  Total wins: 28/36 (77.8%)
+  As Player 1: 15/20 wins (75.0%)
+  As Player 2: 13/16 wins (81.2%)
 
-Opponent: Bridge
-Games: 200, Time: 25.1s
-Win rate as P1: 31.0% (31/100)
-Win rate as P2: 21.0% (21/100)
-Overall win rate: 26.0%
-Draws: 0 (0.0%)
+Edgecontrol Statistics:
+  Games played: 40
+  Total wins: 38/40 (95.0%)
+  As Player 1: 19/19 wins (100.0%)
+  As Player 2: 19/21 wins (90.5%)
 
-Opponent: TemplatePattern
-Games: 200, Time: 28.2s
-Win rate as P1: 41.0% (41/100)
-Win rate as P2: 34.0% (34/100)
-Overall win rate: 37.5%
-Draws: 0 (0.0%)
+Bridgeagent Statistics:
+  Games played: 30
+  Total wins: 23/30 (76.7%)
+  As Player 1: 12/15 wins (80.0%)
+  As Player 2: 11/15 wins (73.3%)
 
-Opponent: ThreatCreation
-Games: 200, Time: 26.7s
-Win rate as P1: 48.0% (48/100)
-Win rate as P2: 44.0% (44/100)
-Overall win rate: 46.0%
-Draws: 0 (0.0%)
+Templatepattern Statistics:
+  Games played: 42
+  Total wins: 6/42 (14.3%)
+  As Player 1: 4/26 wins (15.4%)
+  As Player 2: 2/16 wins (12.5%)
 
-Opponent: VirtualConnection
-Games: 200, Time: 25.9s
-Win rate as P1: 26.0% (26/100)
-Win rate as P2: 24.0% (24/100)
-Overall win rate: 25.0%
-Draws: 0 (0.0%)
+Threatcreation Statistics:
+  Games played: 52
+  Total wins: 4/52 (7.7%)
+  As Player 1: 0/22 wins (0.0%)
+  As Player 2: 4/30 wins (13.3%)
 
-Opponent: DefensivePositioning
-Games: 200, Time: 24.4s
-Win rate as P1: 53.0% (53/100)
-Win rate as P2: 40.0% (40/100)
-Overall win rate: 46.5%
-Draws: 0 (0.0%)
+Virtualconnection Statistics:
+  Games played: 40
+  Total wins: 15/40 (37.5%)
+  As Player 1: 6/18 wins (33.3%)
+  As Player 2: 9/22 wins (40.9%)
 
-Opponent: OpeningStrategy
-Games: 200, Time: 24.5s
-Win rate as P1: 34.0% (34/100)
-Win rate as P2: 61.0% (61/100)
-Overall win rate: 47.5%
-Draws: 0 (0.0%)
+Defensiveposition Statistics:
+  Games played: 44
+  Total wins: 13/44 (29.5%)
+  As Player 1: 2/21 wins (9.5%)
+  As Player 2: 11/23 wins (47.8%)
 
-Opponent: CenterDominance
-Games: 200, Time: 4170.5s
-Win rate as P1: 36.0% (36/100)
-Win rate as P2: 28.0% (28/100)
-Overall win rate: 32.0%
-Draws: 0 (0.0%)
+Openingstrategy Statistics:
+  Games played: 41
+  Total wins: 18/41 (43.9%)
+  As Player 1: 7/21 wins (33.3%)
+  As Player 2: 11/20 wins (55.0%)
 
-==================================================
-OVERALL TRAINING SUMMARY
-==================================================
-Total games: 2200
-Overall win rate: 28.0%
-Win rate as P1: 29.0%
-Win rate as P2: 27.1%
-Draws: 0 (0.0%)
+Centerdominance Statistics:
+  Games played: 43
+  Total wins: 12/43 (27.9%)
+  As Player 1: 5/28 wins (17.9%)
+  As Player 2: 7/15 wins (46.7%)
+
+============================================================
+Total games played: 250
+Total time: 90.66 seconds
+Average time per game: 0.36 seconds
+============================================================

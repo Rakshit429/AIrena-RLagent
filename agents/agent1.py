@@ -6,8 +6,8 @@ import os
 import math
 
 class CustomPlayer(Agent):
-    def __init__(self, size, player_number, adv_number, alpha=0.2, gamma=0.95, epsilon=0.3, 
-                 epsilon_decay=0.9999, epsilon_min=0.1, load_q_table_path="models/hex_rl_agent_5x5_all_opponents_final"):
+    def __init__(self, size, player_number, adv_number, alpha=0.2, gamma=0.95, epsilon=0, 
+                 epsilon_decay=0.9999, epsilon_min=0, load_q_table_path="training/saved_models/hex_rl_agent_5x5_all_opponents_final"):
         super().__init__(size, player_number, adv_number)
         self.name = "Enhanced RL Agent with Dual Q-Tables"
         # Learning parameters
